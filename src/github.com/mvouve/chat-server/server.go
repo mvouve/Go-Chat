@@ -93,9 +93,7 @@ func readmsgs(conn net.Conn) {
  * RETURN:      VOID
  *
  * NOTES:
- *          This function is intended to be called as a goroutine, needs an
- *          active connection, will read from that connection, and forward
- *          the messages to other users.
+ *          This is the main server function
  ******************************************************************************/
 func main() {
     if len(os.Args) < 2{
